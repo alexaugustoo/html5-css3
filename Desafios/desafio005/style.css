@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 :root{
     --cor0:black;
     --cor1:white;
     --cor2:darkgray;
-    --cor3:rgba(46, 44, 44, 0.836);
-    --cor4:rgba(0, 0, 0, 0.432);
+    --cor3:rgb(46, 44, 44);
+    --cor4:rgba(0, 0, 0, 0.349);
 
 
-    --font-padrão: Verdana, Geneva, Tahoma, sans-serif;
+    --font2:"Passion One", sans-serif;
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font3:"Josefin Sans", sans-serif;
 }
 *{
     margin: 0;
@@ -17,6 +23,9 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--font3);
+    font-weight: bolder;
+    font-size: 2.5vw;
 }
 section.normal {
     background-color:var(--cor1);
@@ -25,9 +34,28 @@ section.normal {
 section.imagem {
     background-color: var(--cor3);
     color: var(--cor1);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.568);
+    background-size: cover;
+    background-attachment: fixed;
 }
 section.imagem > p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: var(--cor4);
-    padding-left: 5px;
+  
+
 }
+section > p {
+    padding-bottom: 2em;
+}
+
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    
+}
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-position: right center ;
+    
+} 
