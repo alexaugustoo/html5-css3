@@ -1,0 +1,33 @@
+:root{
+    --cor0:black;
+    --cor1:white;
+    --cor2:darkgray;
+    --cor3:rgba(46, 44, 44, 0.836);
+    --cor4:rgba(0, 0, 0, 0.432);
+
+
+    --font-padrão: Verdana, Geneva, Tahoma, sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+section.normal {
+    background-color:var(--cor1);
+    color: var(--cor0);
+}
+section.imagem {
+    background-color: var(--cor3);
+    color: var(--cor1);
+}
+section.imagem > p {
+    width: 400px;
+    background-color: var(--cor4);
+    padding-left: 5px;
+}
