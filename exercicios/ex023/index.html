@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus exemplo</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-variant: small-caps;
+        }
+        h1{
+            width: 100vw;
+            padding: 10px;
+            font-size: 20px;
+            background-color: gray;
+            text-align: center;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            margin: auto;
+            font-size: 13px;
+            font-weight: bold;
+        }
+    
+       
+        td,th{
+            border: 1px solid black;
+            padding:8px;
+        }
+        thead,tfoot{
+        
+            background-color: lightgrey;
+            
+        }
+        tbody > tr:nth-child(odd){
+            background-color: rgb(92, 91, 91);
+        } 
+        tbody > tr:nth-child(even){
+            background-color: rgb(255, 255, 255);
+        } 
+       .numero{
+        text-align: right ;
+       }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas Pequenas</h1>
+    <table>
+        <thead>
+            <tr>
+                <th> Receita Bruta Total em 12 meses</th>
+                <th> Alíquota </th>
+                <th>Valor a Deduzir (em R$)
+                </th>
+            
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td >Até R$ 180.000,00</td>
+                <td class="numero"> 4,5%</td>
+                <td class="numero" > 0</td>
+            </tr>
+            <tr>
+               <td class="n">De R$180.000,01. R$360.000,00 </td>
+               <td class="numero"> 9%</td>
+               <td class="numero">R$ 8.100,00</td>
+            </tr>
+            <tr>
+                <td class="n">De R$ 360.000,01. R$ 720.000,00</td>
+                <td class="numero" >10,2%</td>	
+                <td class="numero" >R$ 12.420,00</td>
+            </tr>
+            <tr>
+                <td class="n">De R$720.000,01. R$1.800.000,00</td>
+                <td class="numero">14%</td>
+                <td class="numero" class="numero" class="numero">R$ 39.780,00</td>
+            </tr>
+            <tr>
+                <td class="n">De R$1.800.000,01. R$3.600.000,00</td>	
+                <td class="numero" class="numero">22%</td>
+                <td class="numero" class="numero">R$ 183.780,00</td>
+            </tr>
+            <tr>
+                <td class="n">De R$3.600.000,01. R$4.800.000,00</td>
+                <td class="numero">33%	</td>
+                <td class="numero">R$ 828.000,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Tabela Simples Nacional 2025 serviços</th>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
