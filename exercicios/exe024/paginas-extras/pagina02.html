@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-variant: small-caps;
+        }
+        h1{
+            width: 100vw;
+            padding: 10px;
+            font-size: 20px;
+            background-color: gray;
+            text-align: center;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            margin: auto;
+            position: relative;
+            
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        thead, tfoot{
+            background-color: gray;
+        }
+        tbody > tr:nth-child(odd){ /* odd significa impar posso usar 2n-1 */
+            background-color: rgba(247, 247, 247, 0.596);
+        }
+        tbody > tr:nth-child( even){ /* odd significa par posso usar 2n */
+            background-color: rgba(172, 172, 175, 0.692);
+        
+        }
+        .numero{
+            text-align: right;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 5px;
+            background-color: rgb(189, 189, 189);
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Uso de tabelas Grandes
+    </h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+
+        TABLE
+            CPATION LEGENDA DAS TABELAS GERALMENTE FICA EM CIMA 
+            THEAD
+                TR linha das tabelas,TH cabeçalho da tabela,TD dados da tabela,
+
+            TBODY
+                 TR,TH,TD scope="row"
+            TFOOT
+                  TR,TH, TD
+    -->
+    <table>
+        <caption>
+            Populaçao das Unidades federativas
+        </caption>
+    <thead>
+        <tr>
+                <th scope="col">  Estado</th>
+                <th scope="col" style="width: 50px;">  Populaçao</th>
+            
+        </tr>
+    </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>	<td class="numero">45 973 194</td>
+        	</tr>
+            <tr>
+                <td>Minas Gerais</td>	<td class="numero">21 322 691	</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro <td class="numero">17 219 679</td>
+            </tr>
+            <tr>
+                <td>Bahia	 <td class="numero"> 14 850 513	</td>
+            </tr>
+            <tr>
+                <td>Paraná <td class="numero"> 11 824 665</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul <td class="numero">11 229 915 </td>
+            </tr>
+            <tr>
+                <td>Pernambuco <td class="numero">	9 539 029	</td>
+            </tr>  
+            <tr>
+                <td>São Paulo</td>	<td class="numero">45 973 194</td>
+        	</tr>
+            <tr>
+                <td>Minas Gerais</td>	<td class="numero">21 322 691	</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro <td class="numero">17 219 679</td>
+            </tr>
+            <tr>
+                <td>Bahia	 <td class="numero"> 14 850 513	</td>
+            </tr>
+            <tr>
+                <td>Paraná <td class="numero"> 11 824 665</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul <td class="numero">11 229 915 </td>
+            </tr>
+            <tr>
+                <td>Pernambuco <td class="numero">	9 539 029	</td>
+            </tr>  
+            <tr>
+                <td>São Paulo</td>	<td class="numero">45 973 194</td>
+        	</tr>
+            <tr>
+                <td>Minas Gerais</td>	<td class="numero">21 322 691	</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro <td class="numero">17 219 679</td>
+            </tr>
+            <tr>
+                <td>Bahia	 <td class="numero"> 14 850 513	</td>
+            </tr>
+            <tr>
+                <td>Paraná <td class="numero"> 11 824 665</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul <td class="numero">11 229 915 </td>
+            </tr>
+            <tr>
+                <td>Pernambuco <td class="numero">	9 539 029	</td>
+            </tr>  
+            <tr>
+                <td>São Paulo</td>	<td class="numero">45 973 194</td>
+        	</tr>
+            <tr>
+                <td>Minas Gerais</td>	<td class="numero">21 322 691	</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro <td class="numero">17 219 679</td>
+            </tr>
+            <tr>
+                <td>Bahia	 <td class="numero"> 14 850 513	</td>
+            </tr>
+            <tr>
+                <td>Paraná <td class="numero"> 11 824 665</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul <td class="numero">11 229 915 </td>
+            </tr>
+            <tr>
+                <td>Pernambuco <td class="numero">	9 539 029	</td>
+            </tr>  
+        </tbody>
+
+    <tfoot>
+        <tr>
+            <th scope="row"> Total de habitantes</th>
+            <td class="numero">210 145 </td>
+        </tr>
+    </tfoot>
+</table>
+
+</body>
+</html>
