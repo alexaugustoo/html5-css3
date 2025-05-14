@@ -7,20 +7,25 @@
 </head>
 <body>
     <form action="cadastro.php" method="post" autocomplete="off">
-        <p><label for="iname">Nome:</label>
-        <input type="text" name="name" id="iname" required  minlength="8"  maxlength="10"
-        size="10" placeholder="digite seu nome">
-        </p>
 
-        <p><label for="isenha">senha:</label>
-        <input type="password" name="senha" id="isenha" required  minlength="8"  maxlength="10"
-        size="10" placeholder="digite sua senha">
-        </p>
-
-        <p>
-            <input type="reset" value="limpar">
-            <input type="submit" value="enviar">
-        </p>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p><label for="">Nome:</label>
+            <input type="text" name="" id="">
+            </p>
+            <p><label for="imail">email:</label>
+            <input type="email" name="email" id="imail" autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel"
+                pattern="^\(\d{2}\)\d{4,5}-\d{4,5}$" required placeholder="(xx)xxxx-xxxx">
+            </p>
+            <p>
+                <input type="reset" value="limpar">
+                <input type="submit" value="enviar">
+            </p>
+        </fieldset>
     </form>
     
 </body>
