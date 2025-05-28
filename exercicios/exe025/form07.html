@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action=".php" method="post" autocomplete="on">
+        <p>
+            <label for="iest"> Estado:</label>
+            <select name="" id="iest">
+                <option value=""select>----Escolha----</option>
+                <optgroup label="Região Sudeste">
+                    <option value="mg"> minas gerais</option>
+                    <option value="rj">rio de janeiro</option>
+                    <option value="sp">sao paulo</option>
+                </optgroup>
+
+            </select>
+        </p>
+
+        <p>
+           <label for="iprof"> Profissão:</label>
+           <input type="text" name="profissao" id="iprof" list="lsprof">
+            <datalist id="lsprof">
+                <option >Desenvolvedor</option>
+                <option >Engenheiro</option>
+                <option> eletricista</option>
+            </datalist>
+        </p>
+            <p>
+                <label for="sms"> Mensagem:</label><br>
+                <textarea name="sms" id="sms" cols="30" rows="30"></textarea>
+            </p>
+        <input type="submit" value="enviar">
+        <input type="reset" name="" id="limpar">
+        </form>
+</html>
