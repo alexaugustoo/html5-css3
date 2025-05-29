@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/*Configuraçoes em modo (PORTRAIT) CRAI SE DENTRO DE PARENTESES*/
+body{
+    background-image: url(../img/cev-portrait.jpg);
+    background-position: center bottom;
+
+    
+}
