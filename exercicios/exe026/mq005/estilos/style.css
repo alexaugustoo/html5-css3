@@ -11,19 +11,22 @@ body,html{
 }
 header{
     background-color: rgba(71, 71, 71, 0.295);
+   
     
 }
 header h1{
     padding: 10px;
     text-align: center;
+    padding: 40px;
 }
 #burguer{
-    background-color: rgba(34, 34, 34, 0.699);
+    background-color: rgb(0, 0, 0);
     display: block;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     cursor: pointer;
+
 }
 #burguer:hover{
     background-color: white;
