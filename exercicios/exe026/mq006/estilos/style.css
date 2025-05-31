@@ -51,7 +51,7 @@ section#login{
 /* 3 PASSO DIV IMAGEM QUE FOI USADA*/
 section#login > div#imagem{
     display: block;
-    background: #5F2C82 url(../mq006/img/foto\ .jpg) no-repeat;
+    background: #5F2C82 url(../img/foto\ .jpg) no-repeat;
     background-size: cover;
     background-position: left bottom;
     height: 200px;
