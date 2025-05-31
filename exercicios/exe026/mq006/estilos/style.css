@@ -23,7 +23,7 @@ telas grandes acima de 1200px
 }
 /*1 PASSO FUNDO DA TELA  */
 body,html{
-    background-image: linear-gradient(to top,#49a09d, #050107);
+    background-image: linear-gradient(to top,#49a09d, #2b16a0);
     height: 100vh;
     width: 100vw;
 }
@@ -68,4 +68,45 @@ section#login > div#formulario {
  p {
     margin: 8px;
     font-size: 0.8em ;
+}
+form{
+    margin: 9px;
+    
+}
+
+form > input[type=submit]{
+    display: block;
+    font-size: 1em;
+    margin-top: 5px;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(95, 182, 197);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+form > input[type=submit]:hover{
+    background-color: rgb(70, 133, 145);
+    cursor: pointer;
+}
+form > a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 2px;
+    padding-top: 5px;
+    width: 100%;
+    height: 40px;
+    background-color:white ;
+    color:rgb(70, 133, 145);
+    border: 2px solid rgba(70, 133, 145, 0.199);;
+    border-radius: 5px;
+    text-decoration: none;
+   
+}
+form > a.botao:hover{
+    background-color:rgb(95, 182, 197);
+}
+form > a.botao > i {
+    font-size: 1em;
 }
