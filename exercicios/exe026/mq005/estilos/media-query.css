@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/*Typical device brackpoints
+--------------------------------
+pequenas telas : até 600px
+celular:600px até 768px
+tablet:768px ate 992px
+desktop: 992px até 1200px
+telas grandes acima de 1200px*/
+
+@media print{
+   #burguer{
+    display: none;
+   }
+}
+
+@media screen and (min-width:768px) {
+      #burguer{
+        display: none;
+    }
+    menu{
+        display: block;
+
+    }
+    menu > ul > li {
+        display: inline-block;
+        
+    }
+    main{
+        width: 768px;
+    }
+    
+}
+
+

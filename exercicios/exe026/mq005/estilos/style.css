@@ -17,14 +17,14 @@ header{
 header h1{
     padding: 10px;
     text-align: center;
-    padding: 40px;
+    
 }
 #burguer{
     background-color: rgb(0, 0, 0);
     display: block;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     cursor: pointer;
 
 }
