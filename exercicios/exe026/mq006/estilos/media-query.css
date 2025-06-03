@@ -9,7 +9,7 @@
     }
 
     section#login> div#imagem {
-        float: right;
+        float: left;
         width: 50%;
         height: 100%;
     }

@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body,html{
+    background-image: linear-gradient(to bottom,rgba(130, 82, 185, 0.664),rgba(42, 146, 172, 0.418));
+    width: 100vw;
+    height: 100vh;
+  
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+section#login{
+    background-color: white;
+    width: 250px;
+    height: 500px;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.63);
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+#imagem{
+    display: block;
+    background-image: url(../img/foto.jpg);
+    background-size: cover;
+    background-position: left bottom;
+    height: 40%;
+}
+#formulario{
+   display: block;
+}
+ h1{
+    font-size: 1.8em;
+    text-align: center;
+    margin-top: 10px;
+ 
+}
+p{  
+    font-size: 0.8em;
+    margin: 5px;
+  
+}

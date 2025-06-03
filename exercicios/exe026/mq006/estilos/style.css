@@ -73,7 +73,6 @@ form{
     margin: 9px;
     
 }
-
 form > input[type=submit]{
     display: block;
     font-size: 1em;
