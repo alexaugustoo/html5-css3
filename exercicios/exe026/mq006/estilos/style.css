@@ -23,14 +23,12 @@ telas grandes acima de 1200px
 }
 /*1 PASSO FUNDO DA TELA  */
 body,html{
-    background-image: linear-gradient(to top,#49a09d, #2b16a0);
+    background-color: #400264;
     height: 100vh;
     width: 100vw;
 }
 main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: relative;
     height: 100vh;
     width: 100vw;
 }
@@ -38,15 +36,22 @@ main{
 
 /* 2 PASSO DIV ONDE VAI FICA TODO CONTEUDO*/
 section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   
+
+
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 520px;
     border-radius: 20px;
     overflow: hidden;
-
     box-shadow: 0px 0px 10px rgba(0, 227, 243, 0.199);
-    transition: widht 0.3, height 0.3;
+
+    transition: widht .3s, height .3s;
     transition-timing-function: ease;
+     transform: translate(-50%,-50%);
 }
 /* 3 PASSO DIV IMAGEM QUE FOI USADA*/
 section#login > div#imagem{
@@ -56,56 +61,103 @@ section#login > div#imagem{
     background-position: left bottom;
     height: 200px;
 }
-/* 3 PASSO TODO CONTEUDO DO FORMULARIO*/
-section#login > div#formulario {
+/*TITULO PARAGRAFO */
+.formulario {
     display: block;
     padding: 10px;
+    
 }
  h1{
     text-align: center;
-    margin-bottom: 10px;
+    
 }
  p {
+    margin-bottom: 5px;
     text-align:center;
     font-size: 0.8em ;
 }
-form{
-    margin: 9px;
+
+/* FORMULARIO LOGIN SENHA*/
+form  .campo{
+    display: block;    
+    background-color:  #400264;
+    border: 2px solid #400264;
+    margin-top: 5px;
+    margin:13px;
+    width:90%;
+    height: 40px;
     
+    border-radius: 8px;
+ 
+    font-size: 0.9em;
 }
-form > input[type=submit]{
+label{
+    display: none;
+}
+div.campo > i{
+    color: #ffffff;
+   
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+div.campo > input{
+    background-color: rgb(101, 194, 211);
+    font-size: 0.9em;
+    
+    width: calc(100% - 44px);
+    height: 100%;
+   
+    border: 0;
+    border-radius: 8px;
+    transform: translateY(-9px);
+}
+div.campo > input:focus-within{
+    background-color: white;
+    border: none;
+
+}
+
+
+/* ULTIMA PARTE*/
+form  input[type=submit]{
     display: block;
     font-size: 1em;
-    margin-top: 5px;
-    width: 100%;
+    margin:13px;
+    width: 90%;
     height: 40px;
     background-color: rgb(95, 182, 197);
     color: white;
     border: none;
     border-radius: 5px;
-}
-form > input[type=submit]:hover{
-    background-color: rgb(70, 133, 145);
     cursor: pointer;
 }
-form > a.botao{
+form input[type=submit]:hover{
+    background-color: rgb(70, 133, 145);
+  
+}
+form a.botao{
     display: block;
     text-align: center;
     font-size: 1em;
-    margin-top: 2px;
+
+    margin:13px;
     padding-top: 5px;
-    width: 100%;
+    width: 90%;
     height: 40px;
-    background-color:white ;
-    color:rgb(70, 133, 145);
-    border: 2px solid rgba(70, 133, 145, 0.199);;
-    border-radius: 5px;
+
+    background-color: white;
+    color:  rgb(70, 133, 145);
+    border-radius: 7px;
+    border: 1px solid  rgb(95, 182, 197);
     text-decoration: none;
-   
+    
+    
 }
-form > a.botao:hover{
-    background-color:rgb(95, 182, 197);
+form a.botao:hover{
+    background-color: rgb(70, 133, 145);
+    color: white;
 }
-form > a.botao > i {
-    font-size: 1em;
+form a.botao i{
+    font-size: 0.8em;
 }
