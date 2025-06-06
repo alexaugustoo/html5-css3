@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body,html{
+    background-image: url(img/biblia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    position: relative;
+   
+    width: 100vw;
+    height: 100vh;
+}
+section{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    padding: 10px;
+
+
+    background-color: aliceblue;
+    width: 500px;
+    height: 290px;
+
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.212);
+    box-shadow: 0px 0px 10px rgba(235, 145, 10, 0.774);
+}
+#formulario  h1{
+    text-align: center;
+    margin: 20px;
+}
+#formulario p{
+    text-align: center;
+   
+}
+/* CAMPO E-MAIL */
+
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(128, 126, 126, 0.096);
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    height: 20px;
+    padding: 5px;
+    
+}
+
+.campo input[type=email]{
+  
+   width: 100vw;
+   height: 30px;
+   border-radius: 5px;
+   border: none;
+   margin: 5px;
+}
+.campo i{
+    color: rgb(0, 0, 0);
+    font-size: 0.9em;
+    padding: 5px;
+
+
+   
+}
+.campo h1{
+    margin: 10px;
+    font-weight: normal;
+    font-size: 1em;
+}
+.campo p{
+    display: block;
+    text-align: center;
+    padding: 15px;
+    
+    
+}
+.botao{
+    color:rgb(0, 252, 63);;
+}
+/* CAMPO FINAL */
+
+form input[type=submit]{
+    background-color: rgb(8, 212, 59);
+    color: white;
+    font-size: 1em;
+   
+    
+
+    display: block;
+    margin: auto;
+    width: 90%;
+    height: 40px;
+
+    border: 1px solid rgba(0, 0, 0, 0.288);
+    border-radius: 5px;
+
+}
+form input[type=submit]:hover{
+    background-color: #63D061;
+}
