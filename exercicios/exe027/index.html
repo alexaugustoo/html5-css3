@@ -5,30 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <link rel="stylesheet" href="estilosstyle.css">
+     <link rel="stylesheet" href="estilos/style.css">
      <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 <body>
     
     <main> 
         <section>
-            <div id="formulario">
-                <h1>Entrar</h1>
-               
-            </div>
-            <form action=".php" method="post" autocomplete="on">
+           
+                <div id="formulario">
+                    <h1>Entrar</h1>
                 
-                <div class="campo">
-                   <h1>Email</h1>
-                    <div class="login">
-                        <i class="material-icons">mail</i>
-                        <input type="email" name="email" id="mail" placeholder="Utileze o mesmo e-mail da compra"  required minlength="10" maxlength="30"  autocomplete="on" >
-                    </div>
-
-                    <p>Já tem uma conta? <a href="#" class="botao">Cadastre-se</a></p>
                 </div>
-                <input type="submit" value="Login">
+                <form action=".php" method="post" autocomplete="on">
                 
+                    <div class="campo">
+                       <h1>Email</h1>
+                        <div class="login">
+                            <i class="material-icons">mail</i>
+                            <input type="email" name="email" id="mail" placeholder=" Utileze o mesmo e-mail da compra"  required minlength="10" maxlength="30"  autocomplete="on" >
+                        </div>
+                        <div class="login">
+                           <i class="material-icons md-24" id="vpn">vpnkey</i>
+                           <input type="password" name="senha" id="isenha"  placeholder=" Sua senha" required minlength="4" maxlength="12">
+                        </div>
+                        <p>Já tem uma conta?    Clique em cadastrar</P> 
+                    </div>
+                    <input type="submit" value="Login"><br>
+                    <input type="submit" value="Cadastre-se"><br>
+                    
+                
+          
             </form>
         </section>
     </main>
