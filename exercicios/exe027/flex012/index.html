@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible-box</title>
+    <style> 
+     .container{
+        background-color: rgb(206, 10, 10);
+        width: 90vw;
+        height: 500px;
+
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+     }
+     .c3{
+        background-color: aqua;
+        border: 1px solid black;
+        flex-basis: 400px;
+        padding: 10px;
+       
+     }
+     #cxa{
+        flex: 0 1 100px;
+     }
+     #cxb{
+
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+     }
+     #cxc{
+        flex: initial;
+     }
+    </style>
+</head>
+<body> 
+        <div class="container">
+            <div class="c3" id="cxa">caixadsasda s sa dasdsdasda adsa 1</div>
+            <div class="c3" id="cxb">cai das da sd asddsad xa2</div>
+            <div class="c3" id="cxc">caixa3</div>
+
+            
+            
+        </div>
+</body>
+</html>
