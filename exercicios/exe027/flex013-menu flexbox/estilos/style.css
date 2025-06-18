@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@media screen and (max-width:540px){
 
 *{
     margin: 0px;
@@ -6,61 +7,60 @@
     box-sizing: border-box;
 }
 body{
+    background-color: lightgray;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
-    background-color: lightgray;
-
-    height: 100vh;
-    width: 100vw;
 }
-
 header{
     background-color: gray;
+
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+header h1{
+    color: white;
+    flex-basis: 50px;
+}
+#burguer{
+    display: block;
     color: white;
     padding: 10px;
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-
-
+    cursor: pointer;
 }
-
-header > h1{
-    border: 1px solid black;
-    flex: 0 0 200px;
+#burguer:hover{
+    background-color: white;
+    color: black;
+ 
 }
-
 nav{
-    border: 1px solid black;
-    
-
     display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
+    flex-flow: column;
+    align-items: center;
+ 
+    
 }
-nav a {
+nav a{
     background-color: black;
     color: white;
     padding: 10px;
     margin: 5px;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-}
 
+    width: 20vw;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+}
 nav a:hover{
     background-color: white;
     color: black;
-    transition: 3s;
+    transition: 1s;
 }
-
-
 main{
     background-color: white;
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 2px 2px 3px black;
+    box-shadow:  2px 2px 5px rgb(0, 0, 0);
+}
 }
