@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.container{
+    display: grid;
+    grid-template: repeat(3,100px) / repeat(4, 1fr);
+    grid-auto-flow: row;
+    gap: 5px;
+}
+.caixa1{
+    grid-row-start: 1 ;
+    grid-row-end: 2;
+
+    grid-column-start: 1 ;
+    grid-column-end: 5;
+    
+    background-color: blue;
+}
+.caixa2{
+    background-color: black;
+    grid-row-start: 2 ;
+    grid-row-end: 4;
+
+    grid-column-start: 1 ;
+    grid-column-end: 3;
+}
+.caixa3{
+    background-color: green;
+
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+    grid-column-start: 3 ;
+    grid-column-end: 5 ;
+}

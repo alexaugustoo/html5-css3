@@ -8,10 +8,11 @@
         .container{
             border: 3px solid blue;
             display: grid;
-            grid-template-columns: auto auto auto;
-            grid-template-rows: 100px 100px 100px;
-            grid-auto-rows: 100px;
-            gap: 5px;
+            grid-template: repeat(3,100px) / repeat(3, auto);
+            place-items: start center;
+            place-content: space-between end;
+
+            
            
         }
         div.item{
@@ -29,14 +30,6 @@
         <div class="item">F</div>
         <div class="item">G</div>
         <div class="item">E</div>
-        <div class="item">E</div>
-        <div class="item">E</div>
-        <div class="item">E</div>
-        <div class="item">E</div>
-        <div class="item">E</div>
-        <div class="item">E</div>
-        <div class="item">E</div>
-            
             
 
   
